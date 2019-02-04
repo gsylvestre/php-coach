@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "PHP Coach",
+  "version": "0.1.0",
+  "description": "Understand and fix your PHP errors",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery-3.3.1.min.js", "catalog_symfony_fr.js", "catalog_fr.js", "content.js"],
+    "matches": ["http://localhost/*", "http://127.0.0.1/*"]
+  }],
+  "icons": { 
+    "16": "icons/coach16.png",
+    "48": "icons/coach48.png",
+   "128": "icons/coach128.png" 
+  } 
+}
